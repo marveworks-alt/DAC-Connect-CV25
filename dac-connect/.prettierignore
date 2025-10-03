@@ -1,0 +1,16 @@
+.next
+out
+node_modules
+coverage
+build
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+.next
+out
+node_modules
+coverage
+build
+pnpm-lock.yaml
+yarn.lock
+package-lock.json

@@ -1,0 +1,20 @@
+{
+  "name": "dac-connect-cv25",
+  "private": true,
+  "packageManager": "npm@10.9.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -w @dac/connect build && npm run -w @dac/console build",
+    "dev": "concurrently -n connect,console -c blue,magenta \"npm --workspace @dac/connect run dev\" \"npm --workspace @dac/console run dev\"",
+    "format": "prettier --write .",
+    "lint": "echo root lint: run per app"
+  },
+  "devDependencies": {
+    "concurrently": "8.2.2",
+    "prettier": "3.3.3",
+    "typescript": "5.6.2"
+  }
+}
